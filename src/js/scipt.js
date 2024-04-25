@@ -2,6 +2,6 @@
 
 alert('all right');
 
-var name = 'dima';
+var yourName = 'dima';
 
-console.log(name);
+console.log(yourName);
