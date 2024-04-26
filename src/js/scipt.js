@@ -1,7 +1,19 @@
 'use strict';
 
-alert('all right');
+let numberOfFilms = prompt("Сколько фильмов вы уже посмотрели?");
+let lastMovieWatched = +prompt("Один из последних фильмов?");
+let ratingOfThisFilm = prompt("На сколько оцените его?");
 
-var yourName = 'dima';
 
-console.log(yourName);
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privet:false
+};
+
+personalMovieDB.movies[lastMovieWatched] = ratingOfThisFilm;
+
+console.log(personalMovieDB['movies']);
+
